@@ -105,3 +105,9 @@ from fastapi.responses import RedirectResponse
 @app.get("/", include_in_schema=False)
 async def _root_redirect():
     return RedirectResponse(url="/docs")
+# add root redirect so visiting base URL opens docs
+from fastapi.responses import RedirectResponse
+
+@app.get("/", include_in_schema=False)
+async def _root_redirect():
+    return RedirectResponse(url="/docs")
