@@ -4,3 +4,5 @@ __pycache__/
 workflow.db
 export.json
 *.log
+ngrok.exe
+ngrok.zip
